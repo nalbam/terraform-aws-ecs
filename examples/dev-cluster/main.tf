@@ -1,4 +1,4 @@
-# ecs fargate
+# ecs
 
 terraform {
   backend "s3" {
@@ -18,12 +18,4 @@ module "ecs" {
 
   region = var.region
   name   = var.name
-}
-
-output "cluster_id" {
-  value = module.ecs.cluster_id
-}
-
-output "cluster_name" {
-  value = module.ecs.cluster_name
 }
